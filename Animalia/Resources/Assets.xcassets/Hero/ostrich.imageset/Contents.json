@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "ostrich.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "ostrich.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },

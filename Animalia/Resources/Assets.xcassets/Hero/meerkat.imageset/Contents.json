@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "meerkat.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "meerkat.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
