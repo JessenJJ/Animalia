@@ -9,12 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     let animals: [AnimalModel] = Bundle.main.decode("animals.json")
+    
+    let haptics = UIImpactFeedbackGenerator(style: .medium)
+    
     @State private var isGridViewActive = false
     @State private var gridLayout: [GridItem] = [
         GridItem(.flexible())
     ]
     @State private var gridColumn: Int = 1
     @State private var toolBarIcon: String = "square.grid.2x2"
+    
+    
     
     // MARK: - FUNCTION GRID SWITCH
     func gridSwitch() {
@@ -48,7 +53,12 @@ struct ContentView: View {
                             .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                         
                         ForEach(animals) { animal in
-                            AnimalListItemView(animal: animal)
+                            
+                            NavigationLink(destination: 
+                                AnimalDetailView(animal: animal)) {
+                                AnimalListItemView(animal: animal)
+                            }
+                            
                         }
                     }
                     .listStyle(.plain)
@@ -56,7 +66,10 @@ struct ContentView: View {
                     ScrollView(showsIndicators: false,content: {
                         LazyVGrid(columns: gridLayout, alignment: .center,spacing: 12,content: {
                             ForEach(animals) { animal in
-                                AnimalGridItemView(animal: animal)
+                                NavigationLink(destination: AnimalDetailView(animal: animal)) {
+                                    AnimalGridItemView(animal: animal)
+                                }
+                                
                             }
                         })
                     })
@@ -73,6 +86,7 @@ struct ContentView: View {
                                 
                                 print("List view is activated")
                                 isGridViewActive = false
+                                haptics.impactOccurred()
                             }
                             
                         } label: {
@@ -87,6 +101,7 @@ struct ContentView: View {
                                 print("Grid view is activated")
                                 isGridViewActive = true
                                 gridSwitch()
+                                haptics.impactOccurred()
                             }
                             
                         } label: {
