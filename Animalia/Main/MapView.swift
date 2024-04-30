@@ -71,6 +71,7 @@ struct MapView: View {
                                 .fontWeight(.bold)
                                 .foregroundStyle(.accent)
                             Spacer()
+                            // region.center untuk menampilkan titik tengah
                             Text("\(region.center.latitude)")
                                 .font(.footnote)
                                 .foregroundStyle(.white)

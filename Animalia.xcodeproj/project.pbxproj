@@ -29,6 +29,9 @@
 		5B265D9F2BE0C5AB00CC7DF1 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B265D9E2BE0C5AB00CC7DF1 /* LocationModel.swift */; };
 		5B265DA22BE0C6D800CC7DF1 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B265DA12BE0C6D800CC7DF1 /* MapAnnotationView.swift */; };
 		5B265DA42BE0CA1700CC7DF1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B265DA32BE0CA1700CC7DF1 /* MapView.swift */; };
+		5B265DA62BE0D96200CC7DF1 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B265DA52BE0D96200CC7DF1 /* CameraView.swift */; };
+		5B265DA82BE0DA3200CC7DF1 /* DataScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B265DA72BE0DA3200CC7DF1 /* DataScanner.swift */; };
+		5B265DAA2BE0DEDD00CC7DF1 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B265DA92BE0DEDD00CC7DF1 /* AlbumView.swift */; };
 		5B5585D62BDF370A002415C0 /* AnimaliaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5585D52BDF370A002415C0 /* AnimaliaApp.swift */; };
 		5B5585DA2BDF370D002415C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5585D92BDF370D002415C0 /* Assets.xcassets */; };
 		5B5585DD2BDF370D002415C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5585DC2BDF370D002415C0 /* Preview Assets.xcassets */; };
@@ -75,6 +78,9 @@
 		5B265D9E2BE0C5AB00CC7DF1 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		5B265DA12BE0C6D800CC7DF1 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 		5B265DA32BE0CA1700CC7DF1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5B265DA52BE0D96200CC7DF1 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		5B265DA72BE0DA3200CC7DF1 /* DataScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScanner.swift; sourceTree = "<group>"; };
+		5B265DA92BE0DEDD00CC7DF1 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		5B5585D22BDF370A002415C0 /* Animalia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animalia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5585D52BDF370A002415C0 /* AnimaliaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimaliaApp.swift; sourceTree = "<group>"; };
 		5B5585D92BDF370D002415C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -170,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				5B265D912BE0907300CC7DF1 /* VideoPlayerHelper.swift */,
+				5B265DA72BE0DA3200CC7DF1 /* DataScanner.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -309,6 +316,8 @@
 				5B265D782BDF60DE00CC7DF1 /* MainView.swift */,
 				5B265D972BE0991200CC7DF1 /* WatchView.swift */,
 				5B265DA32BE0CA1700CC7DF1 /* MapView.swift */,
+				5B265DA52BE0D96200CC7DF1 /* CameraView.swift */,
+				5B265DA92BE0DEDD00CC7DF1 /* AlbumView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -423,13 +432,16 @@
 				5B265D922BE0907300CC7DF1 /* VideoPlayerHelper.swift in Sources */,
 				5B265DA42BE0CA1700CC7DF1 /* MapView.swift in Sources */,
 				5B5586122BDF41DD002415C0 /* BrowseView.swift in Sources */,
+				5B265DA82BE0DA3200CC7DF1 /* DataScanner.swift in Sources */,
 				5B265D792BDF60DE00CC7DF1 /* MainView.swift in Sources */,
 				5B265D752BDF503E00CC7DF1 /* OctagonImageFrame.swift in Sources */,
 				5B55860D2BDF39D2002415C0 /* Bundle+Ext.swift in Sources */,
 				5B265D7D2BDF7CD000CC7DF1 /* HeadingView.swift in Sources */,
 				5B265DA22BE0C6D800CC7DF1 /* MapAnnotationView.swift in Sources */,
 				5B5585E62BDF37BC002415C0 /* CoverImageView.swift in Sources */,
+				5B265DA62BE0D96200CC7DF1 /* CameraView.swift in Sources */,
 				5B265D872BDF948300CC7DF1 /* ExternalWebLinkView.swift in Sources */,
+				5B265DAA2BE0DEDD00CC7DF1 /* AlbumView.swift in Sources */,
 				5B265D982BE0991200CC7DF1 /* WatchView.swift in Sources */,
 				5B55860A2BDF38FC002415C0 /* CoversImageModel.swift in Sources */,
 				5B265D9B2BE09DED00CC7DF1 /* GalleryView.swift in Sources */,
@@ -577,6 +589,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Animalia/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app need permission to access your camera";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app need permission to access your gallery";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -606,6 +620,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Animalia/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app need permission to access your camera";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app need permission to access your gallery";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

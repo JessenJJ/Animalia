@@ -11,15 +11,24 @@ struct MainView: View {
     var body: some View {
         TabView {
             BrowseView()
-                .tabItem { Label("Browse", systemImage: "square.grid.2x2")
-                }
+                .tabItem { Label("Browse", systemImage: "square.grid.2x2") }
+            
             WatchView()
                 .tabItem { Label("Watch",systemImage: "play.rectangle") }
+            
+            CameraView()
+                .tabItem { Label("Camera",systemImage: "camera") }
+            
             MapView()
                 .tabItem { Label("Locations",systemImage: "map") }
             
             GalleryView()
                 .tabItem { Label("Gallery",systemImage: "photo") }
+            
+            AlbumView()
+                .tabItem { Label("Album",systemImage: "photo.on.rectangle.angled") }
+            
+            
         }
     }
 }
