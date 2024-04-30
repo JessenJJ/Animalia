@@ -23,7 +23,7 @@ struct InsetMapView: View {
             let centerCoordinate = CLLocationCoordinate2D(latitude: 4.17727, longitude: 113.99422)
             
             let coordinateSpan = MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
-    https://forms.gle/k2eGqEECzLQ15Z7v8
+    //https://forms.gle/k2eGqEECzLQ15Z7v8
             let region = MKCoordinateRegion(center: centerCoordinate, span: coordinateSpan)
             
             return MapCameraPosition.region(region)

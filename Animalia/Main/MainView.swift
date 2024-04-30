@@ -10,13 +10,15 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-            ContentView()
+            BrowseView()
                 .tabItem { Label("Browse", systemImage: "square.grid.2x2")
                 }
-            Text("Video view")
+            WatchView()
+                .tabItem { Label("Watch",systemImage: "play.rectangle") }
+            MapView()
                 .tabItem { Label("Locations",systemImage: "map") }
             
-            Text("Gallery")
+            GalleryView()
                 .tabItem { Label("Gallery",systemImage: "photo") }
         }
     }

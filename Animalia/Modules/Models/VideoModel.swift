@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct VideoModel: Codable, Identifiable {
+    var id: String
+    var name, headline: String
+    
+    // computed property
+    var thumbnail: String {
+        "video-\(id)"
+    }
+}
