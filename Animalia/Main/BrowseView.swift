@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct BrowseView: View {
     let animals: [AnimalModel] = Bundle.main.decode("animals.json")
     
     let haptics = UIImpactFeedbackGenerator(style: .medium)
@@ -118,5 +118,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    BrowseView()
 }
